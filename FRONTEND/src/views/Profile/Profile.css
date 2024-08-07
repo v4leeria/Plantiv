@@ -1,0 +1,72 @@
+/* Profile.css */
+.miPerfil {
+  text-align: center;
+}
+
+.miPerfil h3 {
+  color: #677f56;
+  font-style: oblique;
+}
+.cardProfile {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid #c1dbaf; /* Borde de la tarjeta */
+  border-radius: 1rem; /* Redondeo de bordes */
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: small; /* Tamaño de fuente pequeño */
+  text-align: center;
+}
+
+.cardProfileFlex {
+  display: flex;
+  flex-direction: column; /* Por defecto en columna en móviles */
+  align-items: center;
+}
+
+.imagenForm {
+  display: flex;
+  flex-direction: column; /* Imagen arriba en móviles */
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.imgProfile {
+  border-radius: 50%; /* Imagen circular */
+  object-fit: cover;
+  height: 200px; /* Tamaño de la imagen */
+}
+
+.cardProfileContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardProfileContent strong {
+  color: #677f56;
+  font-style: oblique;
+}
+
+@media (min-width: 768px) {
+  .cardProfileFlex {
+    flex-direction: row; /* En pantallas grandes, en fila */
+    justify-content: space-around;
+  }
+
+  .imagenForm {
+    margin-right: 2rem; /* Espacio entre la imagen y los datos */
+  }
+
+  .cardProfileContent {
+    text-align: left; /* Texto alineado a la izquierda en pantallas grandes */
+  }
+}
+
+.placeholderProfile {
+  font-size: small;
+  color: grey;
+}

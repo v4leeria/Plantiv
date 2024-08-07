@@ -1,0 +1,49 @@
+/* Publish.css */
+
+.ContainerPublish {
+  background-color: #dae8d0;
+  width: 70%;
+  max-width: 700px; /* Ajusta el ancho máximo aquí */
+  border-radius: 2rem; /* Redondea los bordes */
+  text-align: center;
+  font-size: small;
+  padding: 2rem;
+  margin: 2rem auto; /* Centra el contenedor y agrega margen superior e inferior */
+}
+
+.formPublish {
+  display: flex;
+  flex-direction: column; /* Coloca los inputs en columna */
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Espacio entre los grupos de inputs */
+}
+
+textarea::placeholder {
+  font-size: small;
+  color: #888;
+}
+
+.buttonPublish {
+  width: 100%; /* Asegura que el botón use todo el ancho disponible */
+  font-size: 0.875rem; /* Ajusta el tamaño de fuente del botón */
+  padding: 0.5rem; /* Ajusta el padding del botón */
+}
+
+@media (max-width: 576px) {
+  .ContainerPublish {
+    padding: 1rem;
+    margin: 1rem auto; /* Ajusta el margen en dispositivos móviles */
+  }
+
+  .formPublish {
+    gap: 0.5rem; /* Reduce el espacio entre los inputs en dispositivos móviles */
+  }
+
+  .buttonPublish {
+    font-size: 0.75rem; /* Ajusta el tamaño de fuente del botón en móviles */
+    padding: 0.5rem; /* Ajusta el padding en móviles */
+  }
+}

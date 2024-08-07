@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Planta 1",
+    "description": "Esta es una planta muy bonita, ideal para decorar interiores. Su follaje verde vibrante añade un toque de frescura y naturaleza a cualquier espacio.",
+    "price": 5000,
+    "stock": 1,
+    "imgplanta": "https://images.pexels.com/photos/11177966/pexels-photo-11177966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "name": "Planta 2",
+    "description": "Otra planta muy bonita que se adapta perfectamente a cualquier entorno. Con su diseño elegante, es perfecta para oficinas y hogares, brindando un ambiente relajante.",
+    "price": 4000,
+    "stock": 4,
+    "imgplanta": "https://images.pexels.com/photos/5264388/pexels-photo-5264388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "name": "Planta 3",
+    "description": "Una planta encantadora que se distingue por su resistencia. Es fácil de cuidar y se ve hermosa en cualquier habitación, lo que la convierte en una opción popular entre los amantes de las plantas.",
+    "price": 1500,
+    "stock": 3,
+    "imgplanta": "https://images.pexels.com/photos/3290584/pexels-photo-3290584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "name": "Planta 4",
+    "description": "Esta planta destaca por su belleza única y sus hojas de colores vibrantes. Es ideal para aquellos que desean agregar un toque de color a su hogar.",
+    "price": 2000,
+    "stock": 2,
+    "imgplanta": "https://images.pexels.com/photos/1084188/pexels-photo-1084188.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Planta 5",
+    "description": "Una planta que aporta alegría y vitalidad. Su apariencia robusta y sus hojas saludables la convierten en una excelente elección para cualquier amante de la jardinería.",
+    "price": 3000,
+    "stock": 1,
+    "imgplanta": "https://images.pexels.com/photos/3290585/pexels-photo-3290585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "name": "Planta 6",
+    "description": "Esta planta es conocida por su fácil mantenimiento y su capacidad para prosperar en diversos ambientes. Es perfecta para principiantes y para aquellos con un estilo de vida ocupado.",
+    "price": 6000,
+    "stock": 5,
+    "imgplanta": "https://images.pexels.com/photos/10087935/pexels-photo-10087935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "name": "Planta 7",
+    "description": "Una planta hermosa que aporta un toque de naturaleza a cualquier habitación. Su estilo elegante y su forma única la hacen destacar entre las demás.",
+    "price": 2500,
+    "stock": 4,
+    "imgplanta": "https://images.pexels.com/photos/8790104/pexels-photo-8790104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]

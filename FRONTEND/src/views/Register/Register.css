@@ -1,0 +1,49 @@
+/* Register.css */
+
+.ContainerRegister {
+  background-color: #dae8d0;
+  width: 60%;
+  max-width: 700px; /* Ajusta el ancho máximo aquí */
+  border-radius: 2rem; /* Redondea los bordes */
+  text-align: center;
+  font-size: small;
+  padding: 2rem;
+  margin: 2rem auto; /* Centra el contenedor y agrega margen superior e inferior */
+}
+
+.formRegister {
+  display: flex;
+  flex-direction: column; /* Coloca los inputs en columna */
+  gap: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Espacio entre los grupos de inputs */
+}
+
+.buttonRegister {
+  width: 100%; /* Asegura que el botón use todo el ancho disponible */
+  font-size: 0.875rem; /* Ajusta el tamaño de fuente del botón */
+  padding: 0.5rem; /* Ajusta el padding del botón para hacerlo más delgado */
+}
+
+.tituloRegister {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .ContainerRegister {
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem auto; /* Ajusta el margen en dispositivos móviles */
+  }
+
+  .formRegister {
+    gap: 0.5rem; /* Reduce el espacio entre los inputs en dispositivos móviles */
+  }
+
+  .buttonRegister {
+    font-size: 0.75rem; /* Ajusta el tamaño de fuente del botón en móviles */
+    padding: 0.5rem; /* Ajusta el padding en móviles */
+  }
+}

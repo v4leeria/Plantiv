@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.pexels.com/photos/22610794/pexels-photo-22610794/free-photo-of-modelo-estampado-planta-cacerola.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "caption": "Compras a nivel nacional",
+    "description": "Envíos gratis"
+  },
+  {
+    "id": 2,
+    "image": "https://images.pexels.com/photos/5604376/pexels-photo-5604376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "caption": "Comparte con la comunidad",
+    "description": "Amantes de las plantas por Chile"
+  },
+  {
+    "id": 3,
+    "image": "https://images.pexels.com/photos/4505161/pexels-photo-4505161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "caption": "Publica tus plantas",
+    "description": "No dudes en compartir vida y belleza"
+  }
+]

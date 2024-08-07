@@ -1,0 +1,14 @@
+.home {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.homeImg {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  color: rgb(72, 115, 79);
+  font-style: oblique;
+}

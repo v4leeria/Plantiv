@@ -1,0 +1,31 @@
+.Navbar {
+  background-color: white;
+  border-top: solid 1rem #c1dbaf;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.containerNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navlinkNavbar {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: black;
+}
+
+.navlinkNavbar:hover {
+  color: green; /* Cambia el color al pasar el ratón */
+}
