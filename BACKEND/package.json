@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "node src/index.js",
+    "server": "nodemon index.js",
     "test:auth": "jest test/auth.test.js --detectOpenHandles",
     "test:store": "jest test/store.test.js --detectOpenHandles"
   },
