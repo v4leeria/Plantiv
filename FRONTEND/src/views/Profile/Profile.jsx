@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Card, Alert } from "react-bootstrap";
 import { useUser } from "../../context/UserContext/UserContext";
-import "./Profile.css"; // Asegúrate de importar el CSS
+import "./Profile.css";
 
 const Profile = () => {
   const { user, loading } = useUser();
 
   if (loading) {
-    return <p>Cargando...</p>; // Muestra un mensaje de carga mientras se obtiene el estado del usuario
+    return <p>Cargando...</p>;
   }
 
   return (
@@ -31,7 +31,7 @@ const Profile = () => {
                   className="imgProfile"
                 />
               ) : (
-                <div className="imgProfile">Sin imagen</div> // Alternativa en caso de no haber imagen
+                <div className="imgProfile">Sin imagen</div>
               )}
             </div>
 

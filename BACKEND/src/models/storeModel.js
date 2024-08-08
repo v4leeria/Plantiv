@@ -1,18 +1,15 @@
 const { pool } = require("../config/db");
 
-// Obtener todos los productos
 const getProducts = async () => {
   const result = await pool.query("SELECT * FROM products");
   return result.rows;
 };
 
-// Obtener un producto por ID
 const getProductById = async (id) => {
   const result = await pool.query("SELECT * FROM products WHERE id = $1", [id]);
   return result.rows[0];
 };
 
-// Modificación en la función getCartItems en storeModel.js
 const getCartItems = async (userId) => {
   const query = `
     SELECT ci.id, ci.product_id, ci.quantity, p.imgplanta, p.price, p.name
@@ -26,12 +23,11 @@ const getCartItems = async (userId) => {
     const result = await pool.query(query, values);
     return result.rows;
   } catch (error) {
-    console.error("Error fetching cart items:", error);
+    console.error("Error al obtener cart items:", error);
     throw error;
   }
 };
 
-// Crear un carrito para un usuario
 const createCart = async (userId) => {
   const query = `
     INSERT INTO carts (user_id) VALUES ($1) RETURNING id
@@ -41,12 +37,11 @@ const createCart = async (userId) => {
     const result = await pool.query(query, values);
     return result.rows[0].id;
   } catch (error) {
-    console.error("Error creating cart:", error);
+    console.error("Error creando carrito:", error);
     throw error;
   }
 };
 
-// Obtener un carrito por el ID de usuario
 const getCartByUserId = async (userId) => {
   const query = `
     SELECT id FROM carts WHERE user_id = $1
@@ -60,12 +55,11 @@ const getCartByUserId = async (userId) => {
       return null;
     }
   } catch (error) {
-    console.error("Error fetching cart by user ID:", error);
+    console.error("Error al obtener el carrito por id de carrito:", error);
     throw error;
   }
 };
 
-// Agregar un producto al carrito
 const addToCart = async (userId, productId, quantity) => {
   try {
     let cartId = await getCartByUserId(userId);
@@ -82,12 +76,11 @@ const addToCart = async (userId, productId, quantity) => {
     const values = [cartId, productId, quantity];
     await pool.query(query, values);
   } catch (error) {
-    console.error("Error adding to cart:", error);
+    console.error("Error agregando al carro", error);
     throw error;
   }
 };
 
-// Eliminar un producto del carrito
 const removeFromCart = async (userId, productId) => {
   const query = `
     DELETE FROM cart_items
@@ -103,7 +96,6 @@ const removeFromCart = async (userId, productId) => {
   }
 };
 
-// Crear un producto
 const createProduct = async (product, userId) => {
   const { name, description, price, stock, imgplanta } = product;
   try {

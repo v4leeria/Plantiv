@@ -6,7 +6,7 @@ const PrivateRoute = ({ element }) => {
   const { user, loading } = useUser();
 
   if (loading) {
-    return <p>Cargando...</p>; // Muestra un mensaje de carga mientras se obtiene el estado del usuario
+    return <p>Cargando...</p>;
   }
 
   if (!user) {

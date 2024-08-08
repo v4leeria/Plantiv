@@ -7,7 +7,7 @@ const {
   getUserById,
 } = require("../models/userModel");
 
-const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret";
+const JWT_SECRET = process.env.JWT_SECRET || "clave secreta";
 
 // Función para generar el token JWT
 const generateToken = (user) => {
@@ -96,7 +96,6 @@ const getUserInfo = async (req, res) => {
       return res.status(404).json({ error: "Usuario no encontrado" });
     }
 
-    // Excluir el campo de contraseña si está presente
     const { password, ...userWithoutPassword } = user;
 
     res.json(userWithoutPassword);

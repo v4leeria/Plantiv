@@ -10,10 +10,10 @@ const {
 const listProducts = async (req, res) => {
   try {
     const products = await getProducts();
-    // Redondear el precio en el momento de la respuesta
+
     const formattedProducts = products.map((product) => ({
       ...product,
-      price: Math.round(product.price), // Redondear a número entero
+      price: Math.round(product.price),
     }));
     res.json(formattedProducts);
   } catch (err) {
@@ -25,8 +25,7 @@ const getProduct = async (req, res) => {
   try {
     const product = await getProductById(id);
     if (product) {
-      // Redondear el precio en el momento de la respuesta
-      product.price = Math.round(product.price); // Redondear a número entero
+      product.price = Math.round(product.price);
       res.json(product);
     } else {
       res.status(404).json({ error: "Producto no encontrado" });
@@ -45,8 +44,10 @@ const getCart = async (req, res) => {
     const cartItems = await getCartItems(userId);
     res.status(200).json(cartItems);
   } catch (error) {
-    console.error("Error fetching cart items:", error);
-    res.status(500).json({ error: "Error fetching cart items" });
+    console.error("Error al obtener los artículos del carrito:", error);
+    res
+      .status(500)
+      .json({ error: "Error al obtener los artículos del carrito:" });
   }
 };
 
@@ -59,10 +60,10 @@ const addItemToCart = async (req, res) => {
 
   try {
     await addToCart(userId, productId, quantity);
-    res.status(200).json({ message: "Item added to cart" });
+    res.status(200).json({ message: "Artículo añadido al carrito" });
   } catch (error) {
-    console.error("Error adding item to cart:", error);
-    res.status(500).json({ error: "Error adding item to cart" });
+    console.error("Error al agregar el artículo al carrito", error);
+    res.status(500).json({ error: "Error al agregar el artículo al carrito" });
   }
 };
 
@@ -74,10 +75,12 @@ const removeItemFromCart = async (req, res) => {
   const { productId } = req.params;
   try {
     await removeFromCart(userId, productId);
-    res.status(200).json({ message: "Item removed from cart" });
+    res.status(200).json({ message: "Artículo eliminado del carrito" });
   } catch (error) {
-    console.error("Error removing item from cart:", error);
-    res.status(500).json({ error: "Error removing item from cart" });
+    console.error("Error al eliminar el artículo del carrito", error);
+    res
+      .status(500)
+      .json({ error: "Error al eliminar el artículo del carrito" });
   }
 };
 

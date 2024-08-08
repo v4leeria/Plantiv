@@ -1,15 +1,12 @@
-/* src/components/ProductDetail.css */
-
 .product-image {
   width: 100%;
   object-fit: cover;
-  height: auto; /* Ajusta la altura de la imagen automáticamente */
+  height: auto;
 }
 
-/* Estilos responsivos */
 @media (min-width: 768px) {
   .product-image {
-    height: 400px; /* Ajusta la altura en pantallas más grandes */
+    height: 400px;
   }
 }
 
@@ -21,13 +18,11 @@
   margin-bottom: 1.5rem;
 }
 
-/* Estilo personalizado para el borde */
 .card-border {
-  border: 1px solid #ddd; /* Color de borde */
-  border-radius: 0.25rem; /* Radio del borde para esquinas redondeadas */
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
 }
 
-/* Opcional: Añadir sombra */
 .card-shadow {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

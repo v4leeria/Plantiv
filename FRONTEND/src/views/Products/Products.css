@@ -1,5 +1,3 @@
-/* src/components/Products.css */
-
 .cardProduct {
   height: 100%;
   display: flex;
@@ -8,7 +6,7 @@
 
 .card-img {
   object-fit: cover;
-  height: 15rem; /* Ajusta la altura según tus necesidades */
+  height: 15rem;
 }
 
 .card-title {

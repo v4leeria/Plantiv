@@ -1,4 +1,3 @@
-// src/context/ProductContext/ProductContext.jsx
 import React, { createContext, useState, useEffect, useContext } from "react";
 import axios from "../../config/axiosInstance";
 

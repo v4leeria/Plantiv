@@ -3,7 +3,6 @@
   border-radius: 2rem;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
   .img {
     width: 70%;

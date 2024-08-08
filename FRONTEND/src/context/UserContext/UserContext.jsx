@@ -6,7 +6,7 @@ const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // Estado de carga
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const UserProvider = ({ children }) => {
           console.error("Error fetching user:", error);
         }
       }
-      setLoading(false); // Finaliza la carga
+      setLoading(false);
     };
 
     fetchUser();
@@ -31,7 +31,7 @@ const UserProvider = ({ children }) => {
   const register = async (userData) => {
     try {
       await axios.post("/auth/register", userData);
-      navigate("/login"); // Redirige a la página de login después del registro
+      navigate("/login");
     } catch (error) {
       console.error("Error al registrarse:", error);
       throw new Error("Error al registrarse. Verifica los datos ingresados.");
@@ -46,7 +46,7 @@ const UserProvider = ({ children }) => {
         headers: { Authorization: `Bearer ${response.data.token}` },
       });
       setUser({ ...userResponse.data, token: response.data.token });
-      navigate("/profile"); // Redirige a la página principal o a la deseada
+      navigate("/profile");
     } catch (error) {
       console.error("Error al iniciar sesión:", error);
     }

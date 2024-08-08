@@ -6,12 +6,10 @@ import "./Cart.css";
 const Cart = () => {
   const { cartItems, removeFromCart } = useCart();
 
-  // Calcular el total del carrito sin decimales
   const totalAmount = cartItems.reduce((total, item) => {
     return total + parseFloat(item.price) * item.quantity;
   }, 0);
 
-  // Formatear el precio sin decimales
   const formatPrice = (price) => parseFloat(price).toFixed(0);
 
   return (

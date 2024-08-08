@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, Button, Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../context/ProductContext/ProductContext";
-import "./Products.css"; // Asegúrate de importar el archivo CSS
+import "./Products.css";
 
 const Products = () => {
   const { products } = useProducts();
